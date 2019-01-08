@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Programming Challenge from Accionlabs</title>
+</head>
+<body>
+<script type="text/javascript">
+	// The length of longest word and same word
+	function findLongWord(a){
+		myStr = a.split(' ');
+		longestWordLength=0;
+		for( var i = 0; i < myStr.length;i++){
+			if(myStr[i].length > longestWord){
+				longestWordLength = myStr[i].length;
+				myWord = myStr[i];
+			}
+		}
+		console.log("The longest word length is : " + longestWordLength);
+		console.log("The logest word is : " + myWord);
+	}
+	findLongWord("Transaction is being processed");
+// end of longest word
+
+//Reverse order of a string
+function reverseString(str) {
+  newarr = str.split("");
+  result = [];
+  var x = newarr.length;
+  for (var i = x; i > 0; i--) {
+    result.push(newarr[i]);
+  }
+  str = result.join("");
+   console.log(str);
+}
+reverseString("hello farah");
+// end of reversing a string
+
+//Minimum no. of coins to arrival its total
+// function inputCoin(a){
+// 	var a = [1,3,5];
+// 	var i<= total;
+// 	j(j<i);
+// 	for(var i; i<= total; i++)
+// 		{
+// 			Min[i] = Infinity for all of i;
+// 			Min[0]=0;
+// 			i = 1 to total;
+// 			j = 0 to N - 1;
+// 		}
+// 	if (j<=i && Min[i-j]+1 < Min[i]) {
+// 		Min[i] = Min[i-j]+1;
+// 	}
+// 	return Min[total];
+// }
+// console.log(Min[total]);
+
+</script>
+</body>
+</html>
